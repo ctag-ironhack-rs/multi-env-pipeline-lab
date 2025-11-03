@@ -24,14 +24,14 @@ spec:
           env:
           - name: ENVIRONMENT
             valueFrom:
-            configMapKeyRef:
-              name: webapp-config
-              key: ENVIRONMENT
+              configMapKeyRef:
+                name: webapp-config
+                key: ENVIRONMENT
           - name: VERSION
             valueFrom:
-            configMapKeyRef:
-              name: webapp-config
-              key: VERSION
+              configMapKeyRef:
+                name: webapp-config
+                key: VERSION
           resources:
             requests:
             limits:
